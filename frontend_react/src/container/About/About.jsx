@@ -20,6 +20,8 @@ const abouts = [
   },
 ]
 
+
+
 const About = () => {
   return (
     <>
