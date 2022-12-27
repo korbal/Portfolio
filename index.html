@@ -16,27 +16,83 @@
 
   <!-- intro section -->
 
-  <div class="h-screen">
-    <div class="h-1/2 bg-gradient-to-t from-indigo-200 lg:h-screen"></div>
-  </div>
+  <div class="h-screen ">
+    <div class="h-1/2 bg-gradient-to-t from-indigo-200 lg:h-screen relative overflow-hidden">
 
-  <!-- navbar -->
-  <nav class="fixed top-0 bg-red-400 w-full">
-    <div class="container mx-auto py-5 flex justify-between">
-      <div>
-        <img src="" alt="">
+      <!-- navbar -->
+      <nav class="fixed top-0 bg-white w-full z-10">
+        <div class="container mx-auto py-5 flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img src="./img/logo.png" alt="" class="w-8">
+            <span class="text-2xl font-bold text-indigo-900 ">Portwind.</span>
+          </div>
+          <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+            <li class="hover:text-gray-500">
+              <a href="#">home</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">about</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">services</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">works</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">contact</a>
+            </li>
+          </ul>
+          <img src="./img/moon.png" alt="" class="hidden md:block w-5 cursor-pointer ">
+
+          <!-- hamburger menu -->
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <!-- hamburger menu opened -->
+          <ul id="menu"
+            class=" hidden bg-indigo-900 absolute top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+            <li class="">
+              <a href="#">home</a>
+            </li>
+            <li class="">
+              <a href="#">about</a>
+            </li>
+            <li class="">
+              <a href="#">services</a>
+            </li>
+            <li class="">
+              <a href="#">works</a>
+            </li>
+            <li class="">
+              <a href="#">contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </nav>
+      <!-- navbar end-->
+      <!-- intro content -->
+      <!-- image -->
+      <img src="./img/man.png" alt="" class="absolute bottom-0 right-0 h-5/6 object-cover lg:left-0 mx-auto  ">
+      <!-- circle -->
+      <div
+        class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10 ">
       </div>
-      <span>2</span>
-      <span>3</span>
+      <!-- animated text -->
+
+      <!-- texts -->
+      <div></div>
+      <!-- intro content end -->
     </div>
-  </nav>
-  <!-- navbar end-->
-  <!-- intro content -->
-  <div></div>
-  <!-- intro content end -->
+
+  </div>
   </div>
   <!-- intro section end-->
-  <!-- <h1 class="text-3xl text-red-800 sm:text-blue-700">TEST FASZ</h1> -->
+
+  <script src="./app.js"></script>
 </body>
 
 </html>
