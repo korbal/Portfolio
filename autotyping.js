@@ -119,11 +119,11 @@ var AutoTyping = (function (e) {
 ]).default;
 
 
-const exampleText = ['Developer', 'Designer', 'Author'];
-const exampleTyping = new AutoTyping('#role', exampleText, {
-  typeSpeed: 50,
-  deleteSpeed: 50,
-  waitBeforeDelete: 2000,
+const exampleText = ['Online Businesses', 'Automations', 'Webapps', 'Email Campaigns'];
+const exampleTyping = new AutoTyping('#text', exampleText, {
+  typeSpeed: 20,
+  deleteSpeed: 20,
+  waitBeforeDelete: 1000,
   waitBetweenWords: 500,
 });
 exampleTyping.start()
